@@ -8189,6 +8189,9 @@ Picker.extend( 'pickadate', DatePicker )
       $(window).off('resize.tapTarget');
     };
 
+
+
+
     // Pre calculate
     var calculateTapTarget = function() {
       // Element or parent is fixed position?
@@ -8295,3 +8298,26 @@ Picker.extend( 'pickadate', DatePicker )
   };
 
 }( jQuery ));
+
+
+
+
+    $(".sliding-link").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top-75},'slow');
+	});
+
+
+    $(".navActive").click(
+    	function(event) {
+    		$('li').removeClass('active');
+    		$(this).addClass('active');
+    		event.preventDefault()
+    	}
+    );
+
+    $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });

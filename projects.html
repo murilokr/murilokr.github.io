@@ -16,27 +16,36 @@
       <div class="nav-wrapper container">
         <a id="logo-container" href="index.html" class="brand-logo">MKR</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Navbar Link</a></li>
-          <li><a href="#">Navbar Link</a></li>
-          <li><a href="#">Navbar Link</a></li>
-          <li><a href="#">Navbar Link</a></li>
+          <li class="navActive"><a class="sliding-link" href="#mProj">University Projects</a></li>
+          <li class="navActive"><a class="sliding-link" href="#mGames">Games</a></li>
+          <li class="navActive"><a class="sliding-link" href="#mPProj">Personal Project</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
+          <li><a class="sliding-link" href="#mProj">University Projects</a></li>
+          <li><a class="sliding-link" href="#mGames">Games</a></li>
+          <li><a class="sliding-link" href="#mPProj">Personal Project</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
 
+
+
+
+
+
+
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center grey-text text-lighten-1">Murilo Kinape Rivabem</h1>
-        <div class="row center">
-          <h5 class="header col s12 grey-text text-lighten-2">Computer Science Student at PUCPR</h5>
+                <div class="card-panel teal lighten-2" style="padding-bottom: 1px; padding-left: 1px; padding-top: 1px; padding-right: 1px;">
+          <h1 class="header center white-text text-lighten-1">Murilo Kinape Rivabem</h1>
+          <div class="row center">
+            <h5 class="header col s12 grey-text text-lighten-2">Computer Science Student at PUCPR</h5>
+          </div>
         </div>
         <br><br>
 
@@ -52,7 +61,7 @@
 
 
       <div class="row">
-        <div class="col s12">
+        <div class="col s12" id="mProj">
           <h4 class="center">Some of my University Projects</h4>
         </div>
 
@@ -68,12 +77,23 @@
                 <p>This program was developed for the Artificial Intelligence Class. It was programmed with C++ and uses A* and Dijkstra Algorithms</p>
               </div>
               <div class="card-action">
-              <a target="_blank" href="img/astarprogram.png">Expand Image</a>
+              <a href="#modal1">Expand Image</a>
+
+              
+              <!--href="img/astarprogram.png"-->
               </div>
             </div>
           </div>
         </div>
 
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <img src="img/astarprogram.png">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
 
         <div class="col s12 m7">
           <div class="icon-block">
@@ -87,13 +107,21 @@
                   <p>This program was developed for the Artificial Intelligence Class. It was programmed with C++ and uses Minimax (with Alpha-beta pruning) Algorithm for the Artificial Intelligence</p>
                 </div>
                 <div class="card-action">
-                  <a target="_blank" href="img/tictactoeprogram.png">Expand Image</a>
+                  <a href="#modal2">Expand Image</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <img src="img/tictactoeprogram.png">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
 
       </div>
 
@@ -124,7 +152,7 @@
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12">
+        <div class="col s12" id="mGames">
           <h4 class="center">Developed Games</h4>
         </div>
 
@@ -133,7 +161,7 @@
             <!--Holy Poop-->
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/jogoshowcase1.png">
+                <a href="#modal3"> <img src="img/jogoshowcase1.png"> </a>
                 <span class="card-title">Holy Poop</span>
                 <a href="http://gamejolt.com/games/holy-poop/47583" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">play_for_work</i></a>
               </div>
@@ -145,12 +173,24 @@
           </div>
         </div>
 
+        <!--MODAL-->
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <img src="img/jogoshowcase1.png">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+        <!--MODAL-->
+
+
         <div class="col s12 m4">
           <div class="icon-block">
           <!--Holy Nuke-->
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/jogoshowcase2.png">
+                <a href="#modal4"><img src="img/jogoshowcase2.png"></a>
                 <span class="card-title">Holy Nuke</span>
                 <a href="http://gamejolt.com/games/holy-nuke/116919" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">play_for_work</i></a>
               </div>
@@ -162,12 +202,24 @@
           </div>
         </div>
 
+        <!--MODAL-->
+        <div id="modal4" class="modal">
+          <div class="modal-content">
+            <img src="img/jogoshowcase2.png">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+        <!--MODAL-->
+
+
         <div class="col s12 m4">
           <div class="icon-block">
           <!--Holy Kasike-->
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/jogoshowcase3.png">
+                <a href="#modal5"><img src="img/jogoshowcase3.png"></a>
                 <span class="card-title">Holy Kasike</span>
                 <a href="http://globalgamejam.org/2016/games/holy-kasike" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">play_for_work</i></a>
               </div>
@@ -178,6 +230,17 @@
 
           </div>
         </div>
+
+        <!--MODAL-->
+        <div id="modal5" class="modal">
+          <div class="modal-content">
+            <img src="img/jogoshowcase3.png">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+        <!--MODAL-->
       </div>
 
       <div class="row">
@@ -187,7 +250,7 @@
             <!--Jogo da Neve-->
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/jogoshowcase4.png">
+                <a href="#modal6"><img src="img/jogoshowcase4.png"></a>
                 <span class="card-title">Jogo da Neve</span>
                 <a class="btn-floating halfway-fab waves-effect waves-light green" onclick="Materialize.toast('Not Available to Download', 3000, 'rounded')"><i class="material-icons">not_interested</i></a>
               </div>
@@ -199,12 +262,24 @@
           </div>
         </div>
 
+        <!--MODAL-->
+        <div id="modal6" class="modal">
+          <div class="modal-content">
+            <img src="img/jogoshowcase4.png">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+        <!--MODAL-->
+
+
         <div class="col s12 m4">
           <div class="icon-block">
             <!--Duality-->
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/jogoshowcase5.png">
+                <a href="#modal7"><img src="img/jogoshowcase5.png"></a>
                 <span class="card-title">Duality</span>
                 <a href="http://globalgamejam.org/2017/games/duality-0" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">play_for_work</i></a>
               </div>
@@ -216,12 +291,24 @@
           </div>
         </div>
 
+        <!--MODAL-->
+        <div id="modal7" class="modal">
+          <div class="modal-content">
+            <img src="img/jogoshowcase5.png">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+        <!--MODAL-->
+
+
         <div class="col s12 m4">
           <div class="icon-block">
             <!--Holy Tomada-->
             <div class="card hoverable">
               <div class="card-image">
-                <img src="img/jogoshowcase6.png">
+                <a href="#modal8"><img src="img/jogoshowcase6.png"></a>
                 <span class="card-title">Holy Tomada</span>
                 <a href="https://gamejolt.com/games/holy-tomada/217670" class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">play_for_work</i></a>
               </div>
@@ -232,6 +319,17 @@
             
           </div>
         </div>
+
+        <!--MODAL-->
+        <div id="modal8" class="modal">
+          <div class="modal-content">
+            <img src="img/jogoshowcase6.png">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+        <!--MODAL-->
 
       </div>
     </div>
@@ -244,7 +342,7 @@
     <div class="section">
 
       <div class="row">
-        <div class="col s12 center">
+        <div class="col s12 center" id="mPProj">
           <h4 class="center">Personal Project</h4>
         </div>
 
@@ -264,66 +362,13 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
 
 
-
-
-  <div class="container">
-    <div class="divider"></div>
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Me</h4>
-          
-
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Last Name</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">chat_bubble</i>
-                  <textarea placeholder="Write a Message" id="message" type="text" class="materialize-textarea"></textarea>
-                  <label for="message">Message</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                   <i class="material-icons prefix">email</i>
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-
-
-        </div>
-      </div>
-
-    </div>
-  </div>
 
 
   <div class="parallax-container valign-wrapper">
